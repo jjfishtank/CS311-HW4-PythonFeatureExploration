@@ -101,8 +101,17 @@ print("\nSwitch Statement")
 
 # for loop
 print("\nFor Loop")
-for i in range(5):
+for i in range(3):
     print(i)
+    
+for i in range(3):
+    print(i)
+else:
+    print("Loop finished successfully.")
+    
+# Creating a list of squares using list comprehension
+squares = [x**2 for x in range(6)]
+print(squares)
     
 # while loop
 print("\nWhile Loop")
@@ -110,7 +119,9 @@ i = 0
 while i < 5:
     print(i)
     i += 1
-
+else:
+    print("Loop finished successfully.")
+    
 # indentation to denote code blocks
 print("\nIndentation Code Blocks")
 for i in range(5):
@@ -121,12 +132,22 @@ for i in range(5):
 
 # type binding
 print("\nType Binding")
-# Has been demonstrated throught this file
+# Has been demonstrated throught this file. Dynamic.
+
+x = "5"  # x is a string
+y = 3  # y is an integer
+
+# This will not raise an error, but it might not do what you expect
+z = x * y
 
 # type checking
 print("\nType Checking")
 vehicle = Car(300)
 print("vehicle: ", type(vehicle))
+if type(x) is int:
+    print ("x is an integer")
+else:
+    print("x is not an integer")
 
 # functions
 print("\nFunctions")
@@ -141,6 +162,8 @@ def power(base, exponent=2):
 
 print("power(5) =", power(5))  # Call the function without the exponent argument
 print("power(5, 3) =", power(5, 3))  # Call the function with the exponent argument
+x = power(10)
+print(x)
 
 
 # other feature - Exception Handling
